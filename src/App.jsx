@@ -6,11 +6,16 @@ import Products from './components/Products'
 import Contact from './components/Contact'
 import SingleProduct from './components/SingleProduct'
 import CartPage from './components/CartPage'
+import ErrorPage from './components/ErrorPage'
 
 const router=createBrowserRouter([
   {
     path:'/',
     element:<Home/>
+  },
+  {
+    path:'*',
+    element:<ErrorPage/>
   },
   {
     path:'/about',
